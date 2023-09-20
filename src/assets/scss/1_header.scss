@@ -1,0 +1,16 @@
+.header {
+}
+.containerWidth{
+    padding: 0 !important;
+    max-width: 1920px !important;
+}
+.header__box {
+}
+.header__title {
+    font-size: clamp(36px,5vw,50px);
+    padding: 10px 12px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: $mainBgColor;
+}
