@@ -71,3 +71,10 @@ $mainBgColor : #8c2828;
         }
     }
 }
+@mixin h2Title {
+    background-color: $mainBgColor;
+    color: #fff;
+    font-weight: 700;
+    font-size: clamp(20px,5vw,32px);
+    padding: 5px 12px;
+}

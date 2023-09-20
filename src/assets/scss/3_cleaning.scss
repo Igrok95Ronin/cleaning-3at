@@ -1,0 +1,47 @@
+.cleaning {
+    padding: 50px 0 0;
+}
+.cleaning__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.cleaning__left {
+}
+.cleaning__title {
+    @include h2Title;
+}
+.cleaning__imgWrapper {
+    max-width: 100%;
+}
+.cleaning__img {
+    width: 100%;
+}
+.cleaning__right {
+    padding: 5px 12px;
+}
+.cleaning__txt {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.cleaning__ul {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    li{
+        position: relative;
+        padding-left: 30px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../img/checkBlack.png');
+            background-size: cover;
+            width: 22px;
+            height: 22px;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
