@@ -1,0 +1,26 @@
+.spezialisierte {
+    padding: 50px 0 0;
+}
+.spezialisierte__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.spezialisierte__left {
+}
+.spezialisierte__title {
+    @include h2Title;
+}
+.spezialisierte__imgWrapper {
+    max-width: 100%;
+}
+.spezialisierte__img {
+    width: 100%;
+}
+.spezialisierte__right {
+    padding: 5px 12px;
+}
+.spezialisierte__txt {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
