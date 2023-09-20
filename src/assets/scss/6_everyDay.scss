@@ -1,0 +1,48 @@
+.everyDay {
+    padding: 50px 0 0;
+}
+.everyDay__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.everyDay__left {
+}
+.everyDay__title {
+    @include h2Title;
+}
+.everyDay__imgWr {
+    max-width: 100%;
+}
+.everyDay__img {
+    width: 100%;
+}
+.everyDay__right {
+    padding: 5px 12px;
+}
+.everyDay__txt {
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.everyDay__btnW {
+    text-align: center;
+}
+.everyDay__btn {
+    @include btn;
+    padding: 10px 10px 10px 60px;
+    text-align: center;
+    span{
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../img/znak.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 35px;
+            left: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
